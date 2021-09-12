@@ -64,9 +64,9 @@ function clicked(button){
     else if(button=='equal' && button!='clear'){
         btn_id[i]=Number(html);
         console.log(html);
-        ans=calculator(btn_id[0], btn_id[1],btn_id[2]);
+        ans="="+calculator(btn_id[0], btn_id[1],btn_id[2]);
         textarea.value=ans;
-        html=ans;
+        html=calculator(btn_id[0], btn_id[1],btn_id[2]);
         btn_id[0]=0;
         btn_id[1]=0;
         btn_id[2]=0;
